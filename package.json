@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/STASYA00/Typescript_Website_Template/issues"
   },
-  "homepage": "https://github.com/STASYA00/Typescript_Website_Template#readme"
+  "homepage": "https://github.com/STASYA00/Typescript_Website_Template#readme",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.1"
+  }
 }

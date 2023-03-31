@@ -1,15 +1,21 @@
-System.register("module", [], function (exports_1, context_1) {
+System.register("module", ["uuid"], function (exports_1, context_1) {
     "use strict";
-    var TestModule;
+    var uuid_1, TestModule;
     var __moduleName = context_1 && context_1.id;
     return {
-        setters: [],
+        setters: [
+            function (uuid_1_1) {
+                uuid_1 = uuid_1_1;
+            }
+        ],
         execute: function () {
             TestModule = /** @class */ (function () {
                 function TestModule() {
                     this.value = "Test value";
                 }
                 TestModule.prototype.make = function () {
+                    var a = uuid_1.v4();
+                    console.log(a);
                     console.log(this.value);
                 };
                 return TestModule;
